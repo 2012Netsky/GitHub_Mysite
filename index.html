@@ -1,0 +1,431 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>网络星空 - 首页</title>
+
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 324px;
+	height: 55px;
+	z-index: 1;
+	left: 71px;
+	top: 47px;
+	background-color: #1E8AB1;
+}
+#apDiv2 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+#apDiv3 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+#apDiv4 {
+	position: absolute;
+	width: 239px;
+	height: 107px;
+	z-index: 2;
+	left: 404px;
+	top: 701px;
+	visibility: visible;
+}
+#apDiv5 {
+	position: absolute;
+	width: 240px;
+	height: 107px;
+	z-index: 2;
+	left: 209px;
+	top: 55px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollfollow.js"></script>
+<script type="text/javascript" src="js/flash.js"></script>
+<script type="text/javascript" src="js/int.js"></script>
+</head>
+<body>
+<div id="topBar">
+	<div class="wrapper">
+		<div id="apDiv5"><a href="云搜索.html"><img src="images/logo.gif" alt="1" width="242" height="104" /></a></div>
+		<div class="l">欢迎来到网络星空！</div>
+		<div class="r">
+			<a href="#" onClick="window.external.AddFavorite(location.href,'网页模板素材');">加入收藏</a>
+			<a href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage(location.href);">设为首页</a>
+			<span>
+			<a href="http://www.cssmoban.com/" target="_blank">资料商城</a>|
+			<a href="http://www.cssmoban.com" target="_blank">手机天空</a>|
+			<a href="http://www.cssmoban.com" target="_blank">English</a>
+			</span>
+		</div>
+	</div>
+</div>
+<div id="header">
+  <div class="wrapper">
+	  <div class="logo">
+	  
+		</div>
+		<form target="_blank" action="/search.aspx" method="get"><div class="search">
+			<dl>
+				<dd><a id="search_type1" onClick="select_search_type(1);return false;" href="#" class="current">问题</a></dd>
+				<dd><a id="search_type2" onClick="select_search_type(2);return false;" href="#">想法</a></dd>
+				<dd><a id="search_type3" onClick="select_search_type(3);return false;" href="#">资讯</a></dd>				
+			</dl>
+			<ul>
+				<li><a href="/live/hotel_list.aspx" target="_blank">问题求助</a></li>
+				<li><a href="/eat/foodshops.aspx" target="_blank">爱好娱乐</a></li>
+			</ul>	
+			<div>
+				<input type="text" name="q" onFocus="if(this.value=='这是一个神奇的搜索'){this.value='';}" value="这是一个神奇的搜索" />
+				<input name="search_type" id="search_type" value="1" type="hidden"  /><button type="submit">搜索</button>
+			</div>
+			<p><strong>热门搜索：</strong><a href="/search.aspx?search_type=1&q=%D0%CB%CE%C4%CA%AF%BA%A3">手机电脑维修</a><a href="/search.aspx?search_type=1&q=%83k%CD%F5%C9%BD%BE%B0%C7%F8">专业软件</a><a href="/search.aspx?search_type=3&q=+%CF%E3%CB%AE%C9%BD"> 视频制作</a><a href="/search.aspx?search_type=3&q=qw">手机控制电脑</a><a href="/search.aspx?search_type=1&q=adsf">窃听通话</a><a href="/search.aspx?search_type=1&q=%D1%CF%BC%D2%B6%B4">手机定位</a></p>
+		</div></form>
+	</div>
+  
+</div>
+<div id="nav">
+	<dl>
+		<div></div>
+		<dd><a href="/service" target="_blank" class="a1">电脑天空</a></dd>
+		<dd><a href="file:///F|/桌面备份/my/修  手机维修视频.html" target="_blank" class="a2">手机天空</a></dd>
+		<dd><a href="file:///F|/桌面备份/my/产  星空软件园.html" target="_blank" class="a3">资料库</a></dd>
+	</dl>
+	<ul>
+      <li><a href="file:///F|/桌面备份/my/index.html" class="a1">首页</a></li>
+		<li><a href="修  电脑维修视频.html" class="a2">修</a></li>
+		<li><a href="美  界面街舞吉他钢琴.html" class="a3">住</a></li>
+		<li><a href="控  电脑高手教学网.html" class="a4">行</a></li>
+		<li><a href="学  等级考试教程1.html" class="a5">游</a></li>
+		<li><a href="产  星空软件园.html" class="a6">购</a></li>
+		<li><a href="赚  互联网创业.html" class="a7">娱</a></li>
+	</ul>
+</div> 
+<script type="text/javascript">
+function select_search_type(n){
+	document.getElementById('search_type1').className='';
+	document.getElementById('search_type2').className='';
+	document.getElementById('search_type3').className='';
+	document.getElementById('search_type'+n).className='current';
+	document.getElementById('search_type').value=n;
+}
+</script><div id="main">
+	<div id="cate">
+		<a class="prev"></a>
+		<div class="scroll">
+			<ul>
+				<li>
+					<strong>维修</strong>
+					<a href="/eat/feature.aspx">死机卡机</a>|<a href="/eat/foodshops.aspx">运行加速</a>|<a href="/eat/culture.aspx">卡机加速</a><br />
+					|<a href="#">网路故障</a>|<a href="#">浏览器异常</a>
+				</li>
+				<li>
+					<strong>系统</strong>
+					<a href="/live/hotel_list.aspx?hotel_type=1">系统安装</a>|<a href="/live/hotel_list.aspx?hotel_type=2">linux系统</a>|<a href="/live/hotel_list.aspx?hotel_type=4">多系统</a><br />
+					<a href="http://www.cssmoban.com/?Live/" target="_blank" class="blue">系统激活</a>|<a href="/live/hotel_list.aspx?hotel_type=4">系统优化</a>
+				</li>
+				<li>
+					<strong>美化</strong>
+					<a href="/tour/scenic.aspx">界面美化</a>|<a href="/tour/line.aspx">系统美化</a>|<a href="/tour/rural.aspx">开机动画</a><br />
+					<a href="/tour/guides.aspx">登陆界面</a>|<a href="//diy" class="blue">开机声音</a>|<a href="tour/travel_agency.aspx">关机声音</a>
+				</li>				
+				<li>
+					<strong>学习</strong>
+					<a href="/shop/specialty.aspx">photoshop</a>|<a href="/shop/shopplace.aspx">会声会影</a>|<a href="/shop/article_list.aspx?cid=16">AE</a><br />
+					<a href="/shop/article_list.aspx?cid=11">Flash</a>|<a href=" http://www.cssmoban.com/?" class="red b">3维动画</a>
+				</li>
+				<li>
+					<strong>创业</strong>
+					<a href="/play/match.aspx?type=2" class="b">淘宝开店</a>|<a href="/play/match.aspx?type=1">淘宝兼职</a><br />
+					<a href="/play/match.aspx?type=3">赶集兼职</a>|<a href="/play/playplace.aspx">创业天下</a>
+				</li>
+				<li>
+					<strong>控制</strong>
+					<a href="/service/info.aspx">手机手机</a>|<a href="/service/article.aspx">电脑电脑</a>|<a href="#">电脑手机</a><br />
+					<a href="/service/interaction.aspx">手机电脑</a>|<a href="/service/toolinfo.aspx">一控多</a>
+				</li>
+			</ul>			
+		</div>
+<a class="next"></a>
+	</div>	<div id="index">
+		<div class="indexLeft">
+			<div class="itemA" id="banner"></div>
+<script type="text/javascript" src="js/flashObject.js"></script>
+<script type="text/javascript">
+	var flash = new sohuFlash("flash/banner.swf", "20", 730, 300, "7");
+	flash.addParam("quality", "high");
+	flash.addParam("wmode", "transparent");
+	flash.addVariable("image","images/flashfocus0.jpg|images/flashfocus1.jpg|images/flashfocus2.jpg|images/flashfocus3.jpg");
+	flash.addVariable("stitle","星空快讯|校园微店|阿里之行|互联网创业");
+	flash.addVariable("info",  "<h2><a href='http://www.cssmoban.com/?play/match_detail.aspx?mid=1' target='_blank'>星空快讯</a></h2><p>是对电脑软件，硬件维修，把技术和艺术完美结合，维修结束会附加电脑界面美化，设计，制作，另有数据恢复，笔记本扫描头像开机</p>|<h2><a href='http://www.cssmoban.com' target='_blank'>校园微店</a></h2><p>是对安卓，苹果，windows phone的软硬件故障维护中心，把最先进的科技，软件带给客户，附加有手机定位，2205G手机网盘,手机控制电脑，电脑控制手机</p>|<h2><a href='http://www.cssmoban.com' target='_blank'>阿里之行</a></h2><p>旨在把计算机网络门类自学课程提供下载，如photoshop,promiere,after effect,3D Max,flash,等平面，室内，机械设计</p>|<h2><a href='http://www.cssmoban.com' target='_blank'>互联网创业</a></h2><p>为顾客提供业余时间赚钱的机会，不管是学生，上班族，老人只要会上网，就可以在网上开店，把自己的虚拟化商品不限时间，地点销售出去</p>");
+	flash.addVariable("stopTime","3000");
+	flash.write("banner");
+</script>
+			<div class="itemB">
+				<div class="player" id="picPlayer">
+<script type="text/javascript">
+	var pic_width = 300; //图片宽度
+	var pic_height = 200; //图片高度
+	var button_pos = 4; //按扭位置 1左 2右 3上 4下
+	var stop_time = 5000; //图片停留时间(1000为1秒钟)
+	var show_text = 1; //是否显示文字标签 1显示 0不显示
+	var txtcolor = "444444"; //文字色
+	var bgcolor = "ffffff"; //背景色
+	var imag = new Array();
+	var link = new Array();
+	var text = new Array();	
+	
+	imag[1] = "images/133454091856436111.jpg";
+	//href[1] = "http://www.nwnu.edu.cn";
+	text[1] = "手机电脑相互控制 远程关机 远程浏览";
+		imag[2] = "images/1334540813484828163.jpg";
+	//link[2] = "service/article_detail.aspx?aid=19";
+	text[2] = "影音特效制作 视频 图片 音乐 动画";
+		imag[3] = "images/133454069963991586.jpg";
+	//link[3] = "service/article_detail.aspx?aid=14";
+	text[3] = "平面设计，室内，室外，机械电子设计";
+		imag[4] = "images/135778331093068579.jpg";
+	//link[4] = "service/article_detail.aspx?aid=94";
+	text[4] = "机器人制作电脑黑客手机专家高级专家";
+		
+	var swf_height = show_text == 1 ? pic_height + 45 : pic_height;
+	var pics = "", links = "", texts = "";
+	for (var i = 1; i < imag.length; i++) {
+		pics = pics + ("|" + imag[i]);
+		links = links + ("|" + link[i]);
+		texts = texts + ("|" + text[i]);
+	}
+	pics = pics.substring(1);
+	links = links.substring(1);
+	texts = texts.substring(1);
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://www.cssmoban.com/?pub/shockwave/cabs/flash/swflash.cabversion=6,0,0,0" width="' + pic_width + '" height="' + swf_height + '">');
+	document.write('<param name="movie" value="flash/focus.swf">');
+	document.write('<param name="quality" value="high">');
+	document.write('<param name="wmode" value="transparent">');
+	document.write('<param name="FlashVars" value="pics=' + pics + '&links=' + links + '&texts=' + texts + '&pic_width=' + pic_width + '&pic_height=' + pic_height + '&show_text=' + show_text + '&txtcolor=' + txtcolor + '&bgcolor=' + bgcolor + '&button_pos=' + button_pos + '&stop_time=' + stop_time + '">');
+	document.write('<embed src="flash/focus.swf" wmode="transparent" FlashVars="pics=' + pics + '&links=' + links + '&texts=' + texts + '&pic_width=' + pic_width + '&pic_height=' + pic_height + '&show_text=' + show_text + '&txtcolor=' + txtcolor + '&bgcolor=' + bgcolor + '&button_pos=' + button_pos + '&stop_time=' + stop_time + '" quality="high" width="' + pic_width + '" height="' + swf_height + '" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+	document.write('</object>');
+</script>			
+			  </div>
+				<div class="hot">
+					<ul>
+                    							<li><a href="service/article_detail.aspx?aid=101" target="_blank">电脑手机开机密码破解清除重设</a></li>
+                        						<li><a href="service/article_detail.aspx?aid=100" target="_blank">电脑手机无线远程控制开机关机</a></li>
+                        						<li><a href="service/article_detail.aspx?aid=99" target="_blank">win7/win8.1/win10/linux多系统32位/64位安装</a></li>
+                        					</ul>
+				</div>
+				<div class="list">
+					<dl>
+						<strong><a href="学  等级考试教程1.html">[电脑自学]10000000G电脑教学视频300个教学科目</a></strong>
+						<p><a href="教程展示1.html?aid=101" target="_blank">[全文]</a>让任何人都可以——<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自学成才 增加收入快速成功 改变命运<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——神奇的网站
+</p>
+					</dl>
+					<ul>                  			
+                                
+                                                                          <li><a href="学  等级考试教程1.html">电脑办公 影视动画 等级考试</a></li>
+                        						<li><a href="学  等级考试教程1.html">室内设计 室外设计 动画设计</a></li>
+                        						<li><a href="学  等级考试教程1.html">平面设计 机械设计 电子设计</a></li>
+                        						<li><a href="学  等级考试教程1.html">网页设计 程序设计 电脑高手</a></li>
+                        					</ul>
+				</div>
+			</div>
+            <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+			<div class="itemC">
+				<ul c>
+					<li class="s1"><strong>旅游景点</strong><div><a href="tour/scenic_detail.aspx?sid=2" target="_blank"><img src="images/small_1334285460105140585.jpg" /></a><em><a href="tour/scenic_detail.aspx?sid=2" target="_blank">头像解锁</a></em><p>&nbsp; &nbsp; &nbsp; &nbsp; 头像解锁为笔记本电脑在开机后会扫描使用人的面部进行计算，为管理者头像时，即可开机，否则以其他方式开机...<a href="tour/scenic_detail.aspx?sid=2">[详细]</a></p></div></li>
+					<li class="s2"><strong>远程控制</strong><div><a href="tour/line_detail.aspx?sid=3" target="_blank"><img src="images/yuancheng.jpg" /></a><em><a href="tour/line_detail.aspx?lid=3">远程控制</a></em><p><a href="tour/line_detail.aspx?lid=3" target="_blank">用自己的手机远程读取电脑文件，用自己电脑远程读取别人电脑文件，远程求助...[详细]</a></p></div></li>
+					<li class="s3"><strong>美化界面</strong><div><a href="tour/rural_detail.aspx?rid=" target="_blank"><img src="images/jiemian.jpg" /></a><em><a href="tour/rural_detail.aspx?rid=" target="_blank">界面美化</a></em><p><a href="tour/rural_detail.aspx?rid=" target="_blank">界面美化为打破win系列传统的界面，制作出自己想要的界面，而电脑的正常运行不受影响...[详细]</a></p></div></li>
+					<li class="s4"><strong>清理加速</strong><div><a href="play/match_detail.aspx?mid="><img src="images/qingli.jpg" /></a><em><a href="play/match_detail.aspx?mid=" target="_blank"></a></em><p><a href="play/match_detail.aspx?mid=" target="_blank">清理掉电脑中垃圾文件，垃圾软件，破碎文件让电脑健步如飞...[详细]</a></p></div></li>
+					<li class="s5"><strong>开机还原</strong><div><a href="play/match_detail.aspx?mid=4"><img src="images/huanyuan.jpg" /></a><em><a href="play/match_detail.aspx?mid=4" target="_blank">开机还原</a></em><p>&nbsp; &nbsp; &nbsp; &nbsp; 开机还原为电脑在每次开机后会自动还原到原来状态，如借用电脑是设置开机还原即可保护自己电脑免受修改，可设置为C盘开机还原或D盘还原E盘还原...<a href="play/match_detail.aspx?mid=4" target="_blank">[详细]</a></p></div></li>
+				</ul>
+			</div>
+			<div class="itemD" id="btnPic">
+<script type="text/javascript">
+	var flash = new sohuFlash("flash/flash2593.swf", 5, 731, 127, "2");
+	flash.addParam("quality", "high");
+	flash.addParam("wmode", "transparent");
+	flash.write("btnPic");
+</script>
+			</div>
+			<div class="itemE">
+				<label>第一时间知道最近更新消息<font></font></label>
+				<input type="text" value="常用EMAIL地址" onblur="if (value ==''){value='常用EMAIL地址'}" onfocus="if (value =='常用EMAIL地址'){value =''}" value="常用EMAIL地址" />
+				<button type="submit">建议</button>
+				<span class="text">分享到：</span>
+				<!-- JiaThis Button BEGIN  -->
+				<div id="jiathis_style_32x32">
+					<a class="jiathis_button_qzone"></a>
+					<a class="jiathis_button_tsina"></a>
+					<a class="jiathis_button_tqq"></a>
+					<a class="jiathis_button_kaixin001"></a>
+					<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>				
+				</div>
+				<!-- JiaThis Button END -->
+			</div>
+            
+            
+		  <div class="itemF">
+				<div class="re">
+                
+                
+				  <div class="item">
+						<h3 class="on"><span>1</span><strong>搜索技巧</strong></h3>
+						<div>
+							<dl><a target="_blank" href="live/hotel_detail.aspx?hotel_id=5"><img src="images/res05_attpic_brief.jpg" /></a><p><strong><a href="live/hotel_detail.aspx?hotel_id=5" target="_blank">搜索引擎技巧</a></strong>论文搜索：<span>￥5.00元10篇</span><br /></p></dl>
+							<ul>
+                            								<li><a target="_blank" href="live/hotel_detail.aspx?hotel_id=4">文库 视频</a></li>
+                                								<li><a target="_blank" href="live/hotel_detail.aspx?hotel_id=2">下载 图库</a></li>
+                                							</ul>
+						</div>
+					</div>
+                    
+                    
+				  <div class="item">
+						<h3><span>2</span><strong>硬盘分区</strong></h3>
+						<div style="display:none">
+						<dl><a href="eat/foodshops_detail.aspx?fid=5"><img src="images/t01212432a0127bd78d.jpg" /></a><p><strong><a href="eat/foodshops_detail.aspx?fid=5">硬盘分区维修</a></strong>类型：<span>数据恢复</span><br /></p></dl>
+							<ul>
+																<li><a target="_blank" href="eat/foodshops_detail.aspx?fid=4">硬盘维修 数据恢复</a></li>
+                                								<li><a target="_blank" href="eat/foodshops_detail.aspx?fid=3">硬盘优化 硬盘分区</a></li>
+						  </ul>
+						</div>
+					</div>
+                    
+                    
+				  <div class="item">
+						<h3><span>3</span><strong>软件破解</strong></h3>
+						<div style="display:none">
+							<dl><a href="tour/travel_agency_detail.aspx?tid=1"><img src="images/t0154be12040be8cef6.jpg "/></a><p><strong><a href="tour/travel_agency_detail.aspx?tid=1">专业类软件破解</a></strong>类型：<span>大型，先进软件安装破解</span><br /></p></dl>
+							<ul>
+								<li><a target="_blank" href="eat/foodshops_detail.aspx?fid=4">软件安装 软件破解</a></li>
+                                								<li><a target="_blank" href="eat/foodshops_detail.aspx?fid=3">软件修复 软件更新</a></li>			
+           				  </ul>
+						</div>
+					</div>
+                    
+                    
+				  <div class="item">
+						<h3><span>4</span><strong>淘宝素材</strong></h3>
+						<div style="display:none">
+							<dl><a href="play/playplace_detail.aspx?pid="><img src="images/10741086_172100181180_2.jpg"/></a><p><strong><a href="play/playplace_detail.aspx?pid=">各种媒体素材销售</a></strong>类型：<span>媒体，电子素材模板大量销售</span><br /></p></dl>
+							<ul>
+											<li><a target="_blank" href="eat/foodshops_detail.aspx?fid=4">素材制作 素材销售</a></li>
+                                								<li><a target="_blank" href="eat/foodshops_detail.aspx?fid=3">素材搜集 素材加工</a></li>	
+               			  </ul>
+						</div>
+					</div>
+				</div>
+				<div class="maps">
+					<img src="images/i4.jpg" />
+				</div>
+				<div class="clearit"></div>
+			</div>
+		</div>
+		<div class="indexRight">
+			<div class="itemA">
+				<h3>虚拟游</h3>
+				<ul><a href="修  电脑维修视频.html" target="_blank"><img src="images/i5.jpg" /></a></ul>
+			</div>
+			<div class="itemB">
+				<a href="修  电脑维修视频.html?sid=1"><img src="images/s2.jpg" /></a>
+				<a href="学  等级考试教程1.html?sid=2"><img src="images/s3.jpg" /></a>
+				<img src="images/s4.jpg" />
+			</div>
+			<div class="itemC">
+				<h3>热门导航</h3>
+				<ul>
+					<li><label>站内要求</label><select><option>请选择</option></select></li>
+					<li><label>使用方式</label><select><option>请选择</option></select></li>
+					<li><label>活跃时间</label><select><option>请选择</option></select></li>
+					<li><label>价格区间</label><select><option>请选择</option></select></li>
+					<li><label>个人喜好</label><input type="checkbox" />硬件 <input type="checkbox" />软件<br /><input type="checkbox" />网络 <input type="checkbox" />智能</li>
+					<li><button type="submit" onClick="javascript:window.location.href='/tour/line.aspx'">确 定</button></li>
+				</ul>
+			</div>
+			<div class="itemD">
+				<p><a href="/diy/" target="_blank">定制站上线路</a></p>
+			</div>
+			<div class="itemE">
+				<h3>旅游社区登录</h3>
+				<ul>
+					<li><input type="text" class="input" value="邮箱/会员帐号" /></li>
+					<li><input type="text" class="input" value="请输入密码" /></li>
+					<li><input type="checkbox" class="checkbox" />记住登录<a href="#">忘记了密码？</a></li>
+					<li><button type="submit">立即登录</button></li>
+				</ul>
+			</div>
+			<div class="itemF">
+				<h3>站友分享</h3>
+				<ul>
+					<li><a href="http://www.cssmoban.com/?Travel/" target="_blank" class="a1">5S维修</a></li>
+					<li><a href="http://www.cssmoban.com/?Live/" target="_blank" class="a2">6维修</a></li>
+					<li><a href="http://www.cssmoban.com/" target="_blank" class="a3">爱立信修</a></li>
+					<li><a href="/service/knowledge_list.aspx" target="_blank" class="a4">摩托罗拉</a></li>
+					<li><a href="/service/faq.aspx" target="_blank" class="a5">液晶电视</a></li>
+					<li><a href="/service/yellowpage.aspx" target="_blank" class="a6">机器人</a></li>
+					<li><a href="http://www.cssmoban.com/" target="_blank" class="a7">智能家电</a></li>
+					<li><a href="http://www.cssmoban.com/" target="_blank" class="a8">电脑组装</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearit"></div>
+		<div class="friendLink">
+			<strong>友情链接</strong>
+			
+            
+            
+            <ul>
+            					<li><a href="http://www.cssmoban.com/" title="http://www.yibin.gov.cn/"  target="_blank"><img title="中国宜宾" src="images/juhuasuan.jpg" /></a>
+            					  <div id="apDiv2">
+            					    <div id="apDiv3"></div>
+            					  </div>
+            					</li>
+                                <li><a href="http://www.cssmoban.com/" title="http://www.yibin.gov.cn/"  target="_blank"><img title="中国宜宾" src="images/1231.jpg" /></a></li>
+                                <li><a href="http://www.cssmoban.com/" title="http://www.yibin.gov.cn/"  target="_blank"><img title="中国宜宾" src="images/alimama.jpg" /></a></li>
+                                <li><a href="http://www.cssmoban.com/" title="http://www.yibin.gov.cn/"  target="_blank"><img title="中国宜宾" src="images/taobaowang.jpg" /></a></li>
+                                <li><a href="http://www.cssmoban.com/" title="http://www.yibin.gov.cn/"  target="_blank"><img title="中国宜宾" src="images/youku.jpg" /></a></li>
+                                <li><a href="http://www.cssmoban.com/" title="http://www.yibin.gov.cn/"  target="_blank"><img title="中国宜宾" src="images/xiaoyuanweidian.jpg" /></a></li>
+                				<li><a href="http://www.cssmoban.com/" title="http://www.ems517.com/"  target="_blank"><img title="峨眉山" src="images/zhifubao.jpg" /></a></li>
+		  </ul>
+		  <dl>
+            					<dd><a href="http://www.cssmoban.com" target="_blank">星空之旅</a></dd>
+                				<dd><a href="http://www.cssmoban.com" target="_blank">网络云搜索</a></dd>
+                                <dd><a href="http://www.cssmoban.com" target="_blank">星空快讯</a></dd>	
+                                 <dd><a href="http://www.cssmoban.com" target="_blank">校园微店</a></dd>	
+                                 <dd><a href="http://www.cssmoban.com" target="_blank">阿里妈妈</a></dd>
+                                 <dd><a href="http://www.cssmoban.com" target="_blank">     电脑星空网</a></dd>
+                                 <dd><a href="http://www.cssmoban.com" target="_blank">手机星空网</a></dd>
+                                 <dd><a href="http://www.cssmoban.com" target="_blank">星空维修网</a></dd>
+                                 <dd><a href="星空快讯1.html" target="_blank">星空云平台</a></dd>
+                                 <dd><a href="http|//qxu1587710396.68dsw.com/" target="_blank"> 商之翼</a></dd>
+                                 <dd><a href="http|//1584999662.wezhan.cn" target="_blank"> 云速成</a></dd>
+                                 <dd><a href="http://www.cssmoban.com" target="_blank">   site yun</a></dd>
+                                 <dd><a href="http://www.cssmoban.com" target="_blank"> 聚划算</a></dd>
+                				<dd><a href="互联网创业.html" target="_blank">互联网创业</a></dd>
+              	                 
+		  </dl>
+		</div>
+	</div>
+		<div id="footer">
+		<div class="nav">
+			<ul>
+            					<li><a href="/service/info_view.aspx?aid=5" target="_blank">关于我们</a></li>
+                				<li><a href="/service/info_view.aspx?aid=6" target="_blank">广告服务</a></li>
+                				<li><a href="/service/info_view.aspx?aid=7" target="_blank">联系方式</a></li>
+                				<li><a href="/service/info_view.aspx?aid=8" target="_blank">网站声明</a></li>
+                				<li><a href="/service/info_view.aspx?aid=9" target="_blank">诚聘英才</a></li>
+                				<li><a href="/service/info_view.aspx?aid=10" target="_blank">合作伙伴</a></li>
+                				<li><a href="#">返回顶部</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<div class="l">
+&copy; Copyright &copy; 2013.Company name All rights reserved.网络云搜索- More Templates网络星空科技公司</div>
+</body>
+</html>

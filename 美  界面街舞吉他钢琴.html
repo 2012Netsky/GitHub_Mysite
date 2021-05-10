@@ -1,0 +1,248 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>界面美化</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<style type="text/css">
+#apDiv5 {position: absolute;
+	width: 240px;
+	height: 107px;
+	z-index: 2;
+	left: 207px;
+	top: 57px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollfollow.js"></script>
+<script type="text/javascript" src="js/flash.js"></script>
+<script type="text/javascript" src="js/int.js"></script>
+</head>
+<body>
+<div id="topBar">
+	<div class="wrapper">
+		<div id="apDiv5"><a href="云搜索.html"><img src="images/logo.gif" alt="1" width="242" height="104" /></a></div>
+		<div class="l">欢迎来到网络星空！</div>
+		<div class="r">
+			<a href="#" onclick="window.external.AddFavorite(location.href,'网页模板素材');">加入收藏</a>
+			<a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(location.href);">设为首页</a>
+			<span>
+			<a href="http://shop.xingwentour.gov.cn/" target="_blank">资料商城</a>|
+			<a href="http://www.cssmoban.com" target="_blank">政务网</a>|
+			<a href="http://www.cssmoban.com" target="_blank">English</a>
+			</span>
+		</div>
+	</div>
+</div>
+<div id="header">
+	<div class="wrapper">
+		<div class="logo">
+		  
+		</div>
+		<form target="_blank" action="/search.aspx" method="get"><div class="search">
+			<dl>
+				<dd><a id="search_type1" onclick="select_search_type(1);return false;" href="#" class="current">景点</a></dd>
+				<dd><a id="search_type2" onclick="select_search_type(2);return false;" href="#">线路</a></dd>
+				<dd><a id="search_type3" onclick="select_search_type(3);return false;" href="#">资讯</a></dd>				
+			</dl>
+			<ul>
+				<li><a href="/live/hotel_list.aspx" target="_blank">问题求助</a></li>
+				<li><a href="/eat/foodshops.aspx" target="_blank">爱好娱乐</a></li>
+			</ul>	
+			<div>
+				<input type="text" name="q" onfocus="if(this.value=='这是一个神奇的搜索'){this.value='';}" value="这是一个神奇的搜索" />
+				<input name="search_type" id="search_type" value="1" type="hidden"  /><button type="submit">搜索</button>
+			</div>
+			<p><strong>热门搜索：</strong><a href="/search.aspx?search_type=1&q=%D0%CB%CE%C4%CA%AF%BA%A3">细听字体</a><a href="/search.aspx?search_type=1&q=%83k%CD%F5%C9%BD%BE%B0%C7%F8">开机动画</a><a href="/search.aspx?search_type=3&q=+%CF%E3%CB%AE%C9%BD"> 登陆界面</a><a href="/search.aspx?search_type=3&q=qw">快捷菜单</a><a href="/search.aspx?search_type=1&q=adsf">窗口背景</a><a href="/search.aspx?search_type=1&q=%D1%CF%BC%D2%B6%B4">系统图标</a></p>
+		</div></form>
+	</div>
+</div>
+<div id="nav">
+	<dl>
+		<div></div>
+		<dd><a href="/service" target="_blank" class="a1">旅游服务中心</a></dd>
+		<dd><a href="/diy/" target="_blank" class="a2">个性化线路设计</a></dd>
+		<dd><a href="/xuniyou/" target="_blank" class="a3">虚拟游</a></dd>
+	</dl>
+	<ul>
+	  <li><a href="file:///F|/桌面备份/my/index.html" class="a1">首页</a></li>
+		<li><a href="file:///F|/桌面备份/my/修.html" class="a2">吃</a></li>
+		<li><a href="美  界面街舞吉他钢琴.html" class="a3">住</a></li>
+		<li><a href="控  电脑高手教学网.html" class="a4">行</a></li>
+		<li><a href="学  等级考试教程1.html" class="a5">游</a></li>
+		<li><a href="产  星空软件园.html" class="a6">购</a></li>
+		<li><a href="赚  互联网创业.html" class="a7">娱</a></li>
+	</ul>
+</div> 
+<script type="text/javascript">
+function select_search_type(n){
+	document.getElementById('search_type1').className='';
+	document.getElementById('search_type2').className='';
+	document.getElementById('search_type3').className='';
+	document.getElementById('search_type'+n).className='current';
+	document.getElementById('search_type').value=n;
+}
+</script><div id="main">
+	<div id="cate">
+		<a class="prev"></a>
+		<div class="scroll">
+			<ul>
+				<li>
+					<strong>维修</strong>
+					<a href="/eat/feature.aspx">死机卡机</a>|<a href="/eat/foodshops.aspx">运行加速</a>|<a href="/eat/culture.aspx">卡机加速</a><br />
+					|<a href="#">网路故障</a>|<a href="#">浏览器异常</a>
+				</li>
+				<li>
+					<strong>系统</strong>
+					<a href="/live/hotel_list.aspx?hotel_type=1">系统安装</a>|<a href="/live/hotel_list.aspx?hotel_type=2">linux系统</a>|<a href="/live/hotel_list.aspx?hotel_type=4">多系统</a><br />
+					<a href="http://www.cssmoban.com/?Live/" target="_blank" class="blue">系统激活</a>|<a href="/live/hotel_list.aspx?hotel_type=4">系统优化</a>
+				</li>
+				<li>
+					<strong>美化</strong>
+					<a href="/tour/scenic.aspx">界面美化</a>|<a href="/tour/line.aspx">系统美化</a>|<a href="/tour/rural.aspx">开机动画</a><br />
+					<a href="/tour/guides.aspx">登陆界面</a>|<a href="//diy" class="blue">开机声音</a>|<a href="tour/travel_agency.aspx">关机声音</a>
+				</li>				
+				<li>
+					<strong>学习</strong>
+					<a href="/shop/specialty.aspx">photoshop</a>|<a href="/shop/shopplace.aspx">会声会影</a>|<a href="/shop/article_list.aspx?cid=16">AE</a><br />
+					<a href="/shop/article_list.aspx?cid=11">Flash</a>|<a href=" http://www.cssmoban.com/?" class="red b">3维动画</a>
+				</li>
+				<li>
+					<strong>创业</strong>
+					<a href="/play/match.aspx?type=2" class="b">淘宝开店</a>|<a href="/play/match.aspx?type=1">淘宝兼职</a><br />
+					<a href="/play/match.aspx?type=3">赶集兼职</a>|<a href="/play/playplace.aspx">创业天下</a>
+				</li>
+				<li>
+					<strong>控制</strong>
+					<a href="/service/info.aspx">手机手机</a>|<a href="/service/article.aspx">电脑电脑</a>|<a href="#">电脑手机</a><br />
+					<a href="/service/interaction.aspx">手机电脑</a>|<a href="/service/toolinfo.aspx">一控多</a>
+				</li>
+			</ul>			
+		</div>		
+		<a class="next"></a>
+	</div>	<div id="page">
+		<div class="pageLeft">
+			<h2 class="t4">游</h2>
+			<div class="subNav">
+				<div>
+					<ul>
+						<li><a href="二级页面/美/界面美化.html" >界面美化</a></li>
+                        <li><a href="二级页面/美/字体制作.html" >字体制作</a></li>
+                        <li><a href="二级页面/美/登陆界面.html" >登陆界面</a></li>
+                        <li><a href="二级页面/美/开机动画.html" >开机动画</a></li>
+                        <li><a href="二级页面/美/头像扫描解锁.html" >头像扫描解锁</a></li>
+                        <li><a href="二级页面/美/win按钮.html" >win按钮</a></li>
+						<li><a href="二级页面/美/系统背景.html" >系统背景</a></li>
+						<li><a href="二级页面/美/桌面主题.html" >桌面主题</a></li>
+						<li><a href="二级页面/美/窗口主题.html" >窗口主题</a></li>
+						<li><a href="二级页面/美/图标制作.html" >图标制作</a></li>
+                        <li><a href="二级页面/美/内容页.html" >使用指南</a></li>
+					</ul>
+					<form action="/search.aspx" method="get"><p><input type="text" name="q" onfocus="if(this.value=='全文搜索关键字'){this.value='';}" value="全文搜索关键字" /><input name="search_type" type="hidden" value="3" /><button type="submit">搜</button><a href="#">高级</a></p></form>				</div>			
+			</div>
+			<div class="cust">
+				<p><a href="/diy/" target="_blank">定制我的线路</a></p>
+			</div>
+			<div class="links">
+				<h3>旅游小贴士</h3>
+
+				<ul>
+					<li><a href="http://shop.xingwentour.gov.cn/Travel/" target="_blank" class="a1">界面预订</a></li>
+					<li><a href="http://shop.xingwentour.gov.cn/Live/" target="_blank" class="a2">主题预订</a></li>
+					<li><a href="http://www.weather.com.cn/weather/101271110.shtml" target="_blank" class="a3">登陆美化</a></li>
+					<li><a href="/service/knowledge_list.aspx" target="_blank" class="a4">主题常识</a></li>
+					<li><a href="/service/faq.aspx" target="_blank" class="a5">常见问题</a></li>
+					<li><a href="/service/yellowpage.aspx" target="_blank" class="a6">常用电话</a></li>
+					<li><a href="http://www.12306.cn/mormhweb/" target="_blank" class="a7">主题查询</a></li>
+					<li><a href="http://flight.qunar.com/status/alphlet_order.jsp" target="_blank" class="a8">字体查询</a></li>
+				</ul>
+			</div>			<div class="ad">
+				<a href="#"><img src="images/ad1.jpg" /></a>
+			</div>
+		</div>		<div class="pageRight">
+			<div class="youMain">
+				<script type="text/javascript" src="../js/jquery.cycle.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.youMain .itemA .pic').cycle({
+  	 	fx:      'scrollUp', 
+    	speed:    500,
+        timeout: 5000,
+        pager:  '.youMain .itemA .title',
+        pagerAnchorBuilder: function(idx, slide) {
+            return '.youMain .itemA .title li:eq(' + (idx) + ') a';
+        }
+    });	
+});
+</script>
+				<div class="itemA">
+					<ul class="title">
+                    							<li><a href="" target="_blank">电脑美化，发现之旅！</a></li>	
+                        						<li><a href="" target="_blank">天下奇观—全新win系列</a></li>	
+                        						<li><a href="" target="_blank">动漫 喜迎八方游客</a></li>	
+                        	
+					</ul>
+					<ul class="pic">
+                   		 						<li><a href="" target="_blank"><img src="images/EAX]8$)Z~RI5WJ{}O05N@1S.png" /></a></li>	
+                        						<li><a href="" target="_blank"><img src="images/flashfocus21.jpg" /></a></li>	
+                        						<li><a href="" target="_blank"><img src="images/flashfocus22.jpg" /></a></li>	
+                        	
+					</ul>
+				</div>	
+				<div class="itemB">
+                					<div> <img src="images/AYI$OMB)1(FQSE6(MG@N9EI.png" />
+						<dl>
+						  <dd><a target="_blank" href="attractions_detail.aspx?aid=9">win7</a></dd>
+                            							<dd><a target="_blank" href="attractions_detail.aspx?aid=10">win8</a></dd>
+                            						</dl>
+						<ul>
+														<li><a target="_blank" href="line_detail.aspx?lid=3">电脑主题PPT模板_商务科技_PPT模板_PPT专区</a></li>
+                            							
+                            							<li><strong>咨询电话：0831—2323293</strong></li>
+						</ul>
+						<p><a href="scenic_detail.aspx?sid=2" target="_blank"><em>电脑主题</em>游戏设计_IT/计算机_专业资料</a></p>
+					</div>
+                    					<div> <img src="images/7P)U9O66U{CINQBR)S2ZC(R.png" />
+						<dl>
+						  <dd><a target="_blank" href="attractions_detail.aspx?aid=1">电脑主题PPT模板</a></dd>
+                            							<dd><a target="_blank" href="attractions_detail.aspx?aid=2">剑侠情缘三电 </a></dd>
+                            							
+                   						  </dl>
+						<ul>
+														<li><a target="_blank" href="line_detail.aspx?lid=2">电脑主题PPT模板_商务科技_PPT模板_PPT专区</a></li>
+                            							
+						  <li><strong>咨询电话：0831—2323293</strong></li>
+						</ul>
+						<p><a href="scenic_detail.aspx?sid=1" target="_blank">动漫专区</a></p>
+					</div>
+                    				
+				</div>
+				<div class="itemC">
+					<img src="images/you4.jpg" />
+				</div>
+				<div class="itemE">
+					<img src="images/you5.jpg" />
+				</div>
+			</div>	
+		</div>
+		<div class="clearit"></div>	
+	</div>
+		<div id="footer">
+		<div class="nav">
+			<ul>
+            					<li><a href="/service/info_view.aspx?aid=5" target="_blank">关于我们</a></li>
+                				<li><a href="/service/info_view.aspx?aid=6" target="_blank">广告服务</a></li>
+                				<li><a href="/service/info_view.aspx?aid=7" target="_blank">联系方式</a></li>
+                				<li><a href="/service/info_view.aspx?aid=8" target="_blank">网站声明</a></li>
+                				<li><a href="/service/info_view.aspx?aid=9" target="_blank">诚聘英才</a></li>
+                				<li><a href="/service/info_view.aspx?aid=10" target="_blank">合作伙伴</a></li>
+                				<li><a href="#">返回顶部</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<div class="l">
+				&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">网络云搜索</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">网络星空科技集团 </a>
+
+</body>
+</html>
